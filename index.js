@@ -21,12 +21,12 @@ connectDB(process.env.MONGO_URL)
 .then(
     ()=>{
         console.log("Database connected")
-        app.listen(3000,()=>{
+        app.listen(6000,()=>{
             console.log("server is running")
         })
     }
 )
 .catch((error)=>{
-    console.log(error)
+    console.log(error);
 })
 
